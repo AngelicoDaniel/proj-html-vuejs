@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+
   /* import the fontawesome core */
   import { library } from '@fortawesome/fontawesome-svg-core'
 
