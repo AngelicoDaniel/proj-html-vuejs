@@ -2,6 +2,7 @@
   <div>
     <HeaderComp/>
     <JumboComp/>
+    <BusinessAreas/>
     <MainComp/>
     <FooterComp/>
     
@@ -12,6 +13,9 @@
 <script>
 import HeaderComp from './components/HeaderComp.vue'
 import JumboComp from './components/JumboComp.vue'
+import BusinessAreas from './components/BusinessAreas.vue'
+
+
 
 import MainComp from './components/MainComp.vue'
 import FooterComp from './components/FooterComp.vue'
@@ -21,6 +25,7 @@ export default {
   components: {
     HeaderComp,
     JumboComp,
+    BusinessAreas,
     MainComp,
     FooterComp
   }
@@ -28,6 +33,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./style/style.scss";
 *{
   margin: 0;
   padding: 0;

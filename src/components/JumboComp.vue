@@ -2,23 +2,23 @@
     <section>
         <img src="../assets/img/our-team.png" alt="bg-parralax" class="team">
 
-        <div class="container w-50">
+        <div class="container-fluid w-50">
             <!-- logo -->
             <div class="row d-flex justify-between align-items-center py-3 m-auto">
                 <div class="col-6">
                     <img class="nex" src="../assets/img/logo.png" alt="nex-gen-logo">
                 </div>
             <!--nav-->
-                <div class="col-6 d-flex justify-content-around">
+                <nav class="col-6 d-flex justify-content-around">
                     <ul class="d-flex">
-                        <li class="mx-2" v-for="(elem, index) in navItems" :key="index">{{elem}}</li>
+                        <li class="m-2 p-1" v-for="(elem, index) in navItems" :key="index">{{elem}}</li>
                     </ul>
-                </div>
+                </nav>
             </div>
 
             <!--slogan-->
             <div class="h-100 d-flex flex-column align-items-center text-center my-5">
-                <h1>Ready <span class="highlighted-green">Team</span></h1>
+                <h3>Ready <span class="highlighted-green">Team</span></h3>
                 <p class="p-3">
                     No matter what your company needs, we will be ready to assist you in the
                     best possible way.
@@ -45,6 +45,8 @@
 </script>
 
 <style lang="scss" scoped>
+@import "../style/style.scss";
+
 section{
     background-image: url('../assets/img/squares.jpg');
     background-size: cover;
@@ -52,6 +54,12 @@ section{
     position: relative;
     height: 95vh;
     white-space: nowrap;
+
+    nav{
+        z-index: 1;
+        display: inline-block;
+    }
+
     .team{
         position: absolute;
         top: -16%;
@@ -64,30 +72,17 @@ section{
         text-decoration: none;
         margin: 20px;
     }
-    .btn{
+    li:hover{
         padding: 0.5rem 1rem;
         border-radius: 2px;
         text-decoration: none;
         display: inline-block;
         flex-shrink: 0;
-        cursor: pointer;
-    }
-    .highlighted-green{
-        color: #058283;
-        background-color: #d5e7e8;
-        border-radius: 7px;
-        padding-inline: 0.5rem;
-        opacity: 0.8;
-    }
-    .btn-green{
         background-color: #058283;
         color: white;
+        cursor: pointer;
     }
-    .btn-bg-white{
-        color: #058283;
-        border: 1px solid #058283;
-        background-color: white;
-    }
+
 
 
 }

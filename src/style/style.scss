@@ -1,0 +1,35 @@
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+h5 {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: #14a8aa;
+  }
+
+.btn{
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    text-decoration: none;
+    display: inline-block;
+    flex-shrink: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.highlighted-green{
+    color: #058283;
+    background-color: #d5e7e8;
+    border-radius: 7px;
+    padding-inline: 0.5rem;
+    opacity: 0.8;
+}
+.btn-green{
+    background-color: #058283;
+    color: white;
+}
+.btn-bg-white{
+    color: #058283;
+    border: 1px solid #058283;
+    background-color: white;
+}
