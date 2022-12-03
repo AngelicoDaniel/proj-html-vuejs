@@ -23,16 +23,7 @@
                         <h4>{{service.title}}</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
                     </div>
-
-
-
-
-
-
-
-
                 </div>
-
             </div>
 
         </div>
@@ -96,6 +87,7 @@ section{
 .card{
     width: calc((100% / 3) - 40px);
     padding: 30px 20px;
+    border: none;
 }
 
 i{

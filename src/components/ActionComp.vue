@@ -11,9 +11,9 @@
 
             <div class="container-fluid">
                 <div class="row justify-content-between">
-                    <div v-for="(elem, index) in actionItems" :key="index" class="card my-2">
+                    <div v-for="(elem, index) in actionItems" :key="index" class="card container my-2">
                         <img :src="require(`../assets/img/project${elem.image}.jpg`)" alt="project">
-                        <p>{{elem.title}}</p>
+                        <div class="title col-10 m-auto">{{elem.title}}</div>
                     </div>
                 </div>
             </div>
@@ -31,27 +31,27 @@
                 actionItems: [
                     {
                         image: "-1", 
-                        title: "Audit & Insurance",
+                        title: "Academic professional program in social media",
                     },
                     {
                         image: "-2", 
-                        title: "Financial Advisory",
+                        title: "President's speech at the annual meeting",
                     },
                     {
                         image: "-3", 
-                        title: "Analytics and M&A",
+                        title: "International business trip in Shanghai",
                     },
                     {
                         image: "-4", 
-                        title: "Middle Marketing",
+                        title: "Technology workshop with education theme",
                     },
                     {
                         image: "-5", 
-                        title: "Legal Consulting",
+                        title: "Donation of Clothes and food to the partner NGO",
                     },
                     {
                         image: "-6", 
-                        title: "Regulatory Risk",
+                        title: "Confraternization of the procurement team",
                     },
                     
 
@@ -74,6 +74,23 @@
 .card{
     width: calc((100% / 3) - 40px);
     padding: 30px 20px;
-    border-radius: 20px;
+    border: none;
+    position: relative;
+    img{
+        filter:brightness(50%);
+        border-radius: 20px;
+    }
+    
+        .title{
+            position: absolute;
+            bottom: 20%;
+            left: 10%;
+            color: white;
+            font-weight: 600;
+            font-size: 1.4rem;
+            z-index: 10;
+            
+        }
+    
 }
 </style>
