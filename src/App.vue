@@ -5,6 +5,7 @@
     <BusinessAreas/>
     <AboutComp/>
     <ActionComp/>
+    <NumberComp/>
     <MainComp/>
     <FooterComp/>
     
@@ -18,6 +19,7 @@ import JumboComp from './components/JumboComp.vue'
 import BusinessAreas from './components/BusinessAreas.vue'
 import AboutComp from './components/AboutComp.vue'
 import ActionComp from './components/ActionComp.vue'
+import NumberComp from './components/NumberComp.vue'
 
 
 
@@ -32,6 +34,7 @@ export default {
     BusinessAreas,
     AboutComp,
     ActionComp,
+    NumberComp,
     MainComp,
     FooterComp
   }
