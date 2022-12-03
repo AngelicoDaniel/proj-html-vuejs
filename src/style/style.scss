@@ -22,7 +22,7 @@ a{
 }
 button{
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: 5px;
     text-decoration: none;
     display: inline-block;
     flex-shrink: 0;
@@ -51,4 +51,9 @@ button{
     color: #058283;
     border: 1px solid #058283;
     background-color: white;
+}
+.btn-bg-none{
+    border: 1px solid #058283;
+    background-color: #111117;
+    color: white;
 }

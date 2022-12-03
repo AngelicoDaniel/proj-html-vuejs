@@ -9,21 +9,13 @@
                     <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
 
                     <div class="row">
-                        <div class="col-6">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vel incidunt, iusto consectetur dolore, alias esse facere blanditiis voluptatum minus adipisci nemo voluptate unde, quia exercitationem cumque nostrum. Necessitatibus, animi.
-                        </div>
-                        <div class="col-6">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vel incidunt, iusto consectetur dolore, alias esse facere blanditiis voluptatum minus adipisci nemo voluptate unde, quia exercitationem cumque nostrum. Necessitatibus, animi.
-                        </div>
-                        <div class="col-6">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vel incidunt, iusto consectetur dolore, alias esse facere blanditiis voluptatum minus adipisci nemo voluptate unde, quia exercitationem cumque nostrum. Necessitatibus, animi.
-                        </div>
-                        <div class="col-6">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vel incidunt, iusto consectetur dolore, alias esse facere blanditiis voluptatum minus adipisci nemo voluptate unde, quia exercitationem cumque nostrum. Necessitatibus, animi.
+                        <div v-for="(elem, index) in about" :key="index" class="col-6">
+                            <h4><span><i :class="elem.icon" class="icons"></i></span>{{elem.title}}</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
-                    <button>GET IN TOUCH</button>
-                    <button>READ MORE</button>
+                    <button class="btn-green">GET IN TOUCH</button>
+                    <button class="btn-bg-none mx-5">READ MORE</button>
                 </div>
                 </div>
                 <div class="col-6">
@@ -35,8 +27,31 @@
 </template>
 
 <script>
+
     export default {
-        name: 'AboutComp'
+        name: 'AboutComp',
+        data() {
+            return {
+                about: [
+                    {
+                      icon: "fas fa-ribbon",
+                      title: "Tradition"
+                    },
+                    {
+                      icon: "fas fa-lock",
+                      title: "Security"
+                    },
+                    {
+                      icon: "fas fa-edit",
+                      title: "Certificate"
+                    },
+                    {
+                      icon: "fas fa-graduation-cap",
+                      title: "Expertise"
+                    }
+                ]
+            }
+        }
         
     }
 </script>
@@ -53,6 +68,11 @@ section{
     height:90vh;
     object-fit: contain;
     
+}
+.icons{
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #058283;
 }
 
 </style>
