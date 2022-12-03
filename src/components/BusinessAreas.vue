@@ -3,7 +3,7 @@
         <div class="container">
             <div>
                 <div>
-                    <h5 class="py-3">OUR BUSINESS AREAS</h5>
+                    <h5 class="py-1">OUR BUSINESS AREAS</h5>
                     <h3>Excellence in <span class="highlighted-green">Services</span></h3>
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="py-2 col-8 my-3">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowed professionals. These are some options that you can hire.</p>
@@ -13,15 +13,69 @@
             </div>
 
             <!--services-->
-            <div class="services">
-                <div class="card">
-                    <div class="d-flex justify-content-between">
-                        <i>lorem</i>
-                        <i>lorem</i>
+            <div class="services container-fluid">
+                <div class="row justify-content-between">
+                    <div class="card my-2">
+                        <div class="d-flex justify-content-between align-items-center m-2">
+                            <i>lorem</i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <h4>Aduit e asscurance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
                     </div>
-                    <h4>Aduit e asscurance</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
+
+                    <div class="card my-2">
+                        <div class="d-flex justify-content-between align-items-center m-2">
+                            <i>lorem</i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <h4>Aduit e asscurance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
+                    </div>
+
+                    <div class="card my-2">
+                        <div class="d-flex justify-content-between align-items-center m-2">
+                            <i>lorem</i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <h4>Aduit e asscurance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
+                    </div>
+
+                    <div class="card my-2">
+                        <div class="d-flex justify-content-between align-items-center m-2">
+                            <i>lorem</i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <h4>Aduit e asscurance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
+                    </div>
+
+                    <div class="card my-2">
+                        <div class="d-flex justify-content-between align-items-center m-2">
+                            <i>lorem</i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <h4>Aduit e asscurance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
+                    </div>
+
+                    <div class="card my-2">
+                        <div class="d-flex justify-content-between align-items-center m-2">
+                            <i>lorem</i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <h4>Aduit e asscurance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
+                    </div>
+
+
+
+
+
+
                 </div>
+
             </div>
 
         </div>
@@ -51,6 +105,12 @@ section{
 }
 
 .card{
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 40px);
+    padding: 30px 20px;
+}
+
+i{
+    font-size: 25px;
+    color: #82c1c1;
 }
 </style>
