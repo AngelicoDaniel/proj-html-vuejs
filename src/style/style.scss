@@ -1,21 +1,29 @@
 h3 {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 800;
   }
 h5 {
     font-size: 0.8rem;
     font-weight: bolder;
     color: #14a8aa;
   }
-
-.btn{
+p{
+    font-size: 1rem;
+    color:#8c969b  ;
+    padding:18px 0  ;
+}
+a{
+    text-decoration: none;
+}
+button{
     padding: 0.5rem 1rem;
-    border-radius: 2px;
+    border-radius: 6px;
     text-decoration: none;
     display: inline-block;
     flex-shrink: 0;
     cursor: pointer;
     z-index: 1;
+    border: none;
 }
 .highlighted-green{
     color: #058283;

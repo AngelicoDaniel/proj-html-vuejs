@@ -69,7 +69,6 @@ section{
         height: 60px;
     }
     a{
-        text-decoration: none;
         margin: 20px;
     }
     li:hover{
