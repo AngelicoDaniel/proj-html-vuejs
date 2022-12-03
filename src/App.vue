@@ -3,6 +3,7 @@
     <HeaderComp/>
     <JumboComp/>
     <BusinessAreas/>
+    <AboutComp/>
     <MainComp/>
     <FooterComp/>
     
@@ -14,6 +15,7 @@
 import HeaderComp from './components/HeaderComp.vue'
 import JumboComp from './components/JumboComp.vue'
 import BusinessAreas from './components/BusinessAreas.vue'
+import AboutComp from './components/AboutComp.vue'
 
 
 
@@ -26,6 +28,7 @@ export default {
     HeaderComp,
     JumboComp,
     BusinessAreas,
+    AboutComp,
     MainComp,
     FooterComp
   }

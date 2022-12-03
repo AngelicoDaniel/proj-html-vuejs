@@ -15,59 +15,16 @@
             <!--services-->
             <div class="services container-fluid">
                 <div class="row justify-content-between">
-                    <div class="card my-2">
+                    <div v-for="(service, index) in services" :key="index" class="card my-2">
                         <div class="d-flex justify-content-between align-items-center m-2">
-                            <i>lorem</i>
+                            <i :class="service.icon"></i>
                             <i class="fa-solid fa-arrow-right"></i>
                         </div>
-                        <h4>Aduit e asscurance</h4>
+                        <h4>{{service.title}}</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
                     </div>
 
-                    <div class="card my-2">
-                        <div class="d-flex justify-content-between align-items-center m-2">
-                            <i>lorem</i>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                        <h4>Aduit e asscurance</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
-                    </div>
 
-                    <div class="card my-2">
-                        <div class="d-flex justify-content-between align-items-center m-2">
-                            <i>lorem</i>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                        <h4>Aduit e asscurance</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
-                    </div>
-
-                    <div class="card my-2">
-                        <div class="d-flex justify-content-between align-items-center m-2">
-                            <i>lorem</i>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                        <h4>Aduit e asscurance</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
-                    </div>
-
-                    <div class="card my-2">
-                        <div class="d-flex justify-content-between align-items-center m-2">
-                            <i>lorem</i>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                        <h4>Aduit e asscurance</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
-                    </div>
-
-                    <div class="card my-2">
-                        <div class="d-flex justify-content-between align-items-center m-2">
-                            <i>lorem</i>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                        <h4>Aduit e asscurance</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
-                    </div>
 
 
 
@@ -85,7 +42,39 @@
 
 <script>
     export default {
-        name: 'BusinessAreas'
+        name: 'BusinessAreas',
+        data() {
+            return {
+                services: [
+                    {
+                        icon: "fas fa-network-wired", 
+                        title: "Audit & Insurance",
+                    },
+                    {
+                        icon: "fas fa-briefcase", 
+                        title: "Financial Advisory",
+                    },
+                    {
+                        icon: "far fa-chart-bar", 
+                        title: "Analytics and M&A",
+                    },
+                    {
+                        icon: "fas fa-rocket", 
+                        title: "Middle Marketing",
+                    },
+                    {
+                        icon: "fas fa-globe", 
+                        title: "Legal Consulting",
+                    },
+                    {
+                        icon: "fas fa-inbox", 
+                        title: "Regulatory Risk",
+                    },
+                    
+
+                ]
+            }
+        }
     }
 </script>
 
