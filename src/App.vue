@@ -6,6 +6,7 @@
     <AboutComp/>
     <ActionComp/>
     <NumberComp/>
+    <PartnersComp/>
     <MainComp/>
     <FooterComp/>
     
@@ -20,6 +21,7 @@ import BusinessAreas from './components/BusinessAreas.vue'
 import AboutComp from './components/AboutComp.vue'
 import ActionComp from './components/ActionComp.vue'
 import NumberComp from './components/NumberComp.vue'
+import PartnersComp from './components/PartnersComp.vue'
 
 
 
@@ -35,6 +37,7 @@ export default {
     AboutComp,
     ActionComp,
     NumberComp,
+    PartnersComp,
     MainComp,
     FooterComp
   }
