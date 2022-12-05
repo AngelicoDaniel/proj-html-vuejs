@@ -7,6 +7,7 @@
     <ActionComp/>
     <NumberComp/>
     <PartnersComp/>
+    <FormComp/>
     <MainComp/>
     <FooterComp/>
     
@@ -22,6 +23,7 @@ import AboutComp from './components/AboutComp.vue'
 import ActionComp from './components/ActionComp.vue'
 import NumberComp from './components/NumberComp.vue'
 import PartnersComp from './components/PartnersComp.vue'
+import FormComp from './components/FormComp.vue'
 
 
 
@@ -38,6 +40,7 @@ export default {
     ActionComp,
     NumberComp,
     PartnersComp,
+    FormComp,
     MainComp,
     FooterComp
   }
