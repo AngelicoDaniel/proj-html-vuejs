@@ -30,6 +30,8 @@ button{
     z-index: 1;
     border: none;
 }
+
+
 .highlighted-green{
     color: #058283;
     background-color: #d5e7e8;
@@ -47,10 +49,20 @@ button{
     background-color: #058283;
     color: white;
 }
+.btn-green:hover{
+    background-color: #82c1c1;
+    color: #058283;
+}
+
 .btn-bg-white{
     color: #058283;
     border: 1px solid #058283;
     background-color: white;
+}
+.btn-bg-white:hover{
+    color: white;
+    background-color: #82c1c1;
+
 }
 .btn-bg-none{
     border: 1px solid #058283;

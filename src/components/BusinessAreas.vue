@@ -1,9 +1,9 @@
 <template>
     <section>
-        <div class="container">
+        <div class="container my-5">
             <div>
                 <div>
-                    <h5 class="py-1">OUR BUSINESS AREAS</h5>
+                    <h5 class="py-4">OUR BUSINESS AREAS</h5>
                     <h3>Excellence in <span class="highlighted-green">Services</span></h3>
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="py-2 col-8 my-3">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowed professionals. These are some options that you can hire.</p>
@@ -15,7 +15,7 @@
             <!--services-->
             <div class="services container-fluid">
                 <div class="row justify-content-between">
-                    <div v-for="(service, index) in services" :key="index" class="card my-2">
+                    <div v-for="(service, index) in services" :key="index" class="card my-4">
                         <div class="d-flex justify-content-between align-items-center m-2">
                             <i :class="service.icon"></i>
                             <i class="fa-solid fa-arrow-right"></i>
