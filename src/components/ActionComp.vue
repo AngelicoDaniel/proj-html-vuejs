@@ -13,7 +13,7 @@
                 <div class="row justify-content-between">
                     <div v-for="(elem, index) in actionItems" :key="index" class="card container my-2">
                         <img :src="require(`../assets/img/project${elem.image}.jpg`)" alt="project">
-                        <div class="title col-10 m-auto">{{elem.title}}</div>
+                        <div class="title col-8">{{elem.title}}</div>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
         .title{
             position: absolute;
             bottom: 20%;
-            left: 10%;
+            left: 17%;
             color: white;
             font-weight: 600;
             font-size: 1.4rem;

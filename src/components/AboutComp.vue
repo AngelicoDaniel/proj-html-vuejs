@@ -1,10 +1,10 @@
 <template>
     <div class="relative">
         <div class="top-bullets">
-            <img src="../assets/img/bullets.png" alt="">
+            <img src="../assets/img/bullets-trim.png" alt="">
         </div>
         <div class="bottom-bullets">
-            <img src="../assets/img/bullets.png" alt="">
+            <img src="../assets/img/bullets-trim.png" alt="">
         </div>
         <section>
             <div class="container-fluid">
@@ -76,18 +76,18 @@ section{
 }
 .top-bullets img{
     position: absolute;
-    left: 46.4%;
-    top: -5%;
+    left: 45.9%;
+    top: -5.6%;
     opacity: 0.3; 
-    width: 9%;  
+    width: 10%;  
     aspect-ratio: 16/9;   
 }
 .bottom-bullets img{
     position: absolute;
-    left: 46.4%;
-    bottom: -5%;
+    left: 45.9%;
+    bottom: -6.5%;
     opacity: 0.3; 
-    width: 9%;  
+    width: 10%;  
     aspect-ratio: 16/9;   
 }
 .about-img{
