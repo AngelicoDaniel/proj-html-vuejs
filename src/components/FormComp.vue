@@ -1,5 +1,5 @@
 <template>
-    <section class="container my-5">
+    <section class="container p-5 my-5">
         <div class="row">
             <div class="col-8">
                 <h5>SEND A MESSAGE</h5>
@@ -31,7 +31,7 @@
                             </select>                         
                         </div>
 
-                        <div class="form-group p-0">                           
+                        <div class="form-group p-0 py-4">                           
                             <textarea class="form-control" placeholder="Message" v-model="inputMessage" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                     </form>
@@ -47,13 +47,13 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                
                 <ul>
               <li>
-                <span class="green-circle"><i class="fa-solid fa-phone"></i></span> +1 (305) 1234-5678
+                <span class="green-circle"><i class="fa-solid fa-phone"></i> +1 (305) 1234-5678</span> 
               </li>
               <li>
-                <span class="green-circle"><i class="fa-solid fa-envelope"></i></span> hello@example.com
+                <span class="green-circle"><i class="fa-solid fa-envelope"></i> hello@example.com</span>
               </li>
               <li>
-                <span class="green-circle"><i class="fa-solid fa-location-dot"></i></span> Main Avenue, 987
+                <span class="green-circle"><i class="fa-solid fa-location-dot"></i> Main Avenue, 987</span> 
               </li>
             </ul>
             <button class="btn btn-bg-white">VIEW MAP</button>
