@@ -82,8 +82,6 @@ section{
         cursor: pointer;
     }
 
-
-
 }
 
 
