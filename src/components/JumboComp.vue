@@ -24,8 +24,8 @@
                     best possible way.
                 </p>
                 <div class="d-flex">
-                    <a href="#" class="btn btn-green">GET IN TOUCH</a>
-                    <a href="#" class="btn btn-bg-white">READ MORE</a>
+                    <button class="btn btn-green m-3">GET IN TOUCH</button>
+                    <button class="btn btn-bg-white m-3">READ MORE</button>
                 </div>
             </div>
         </div>
@@ -68,9 +68,7 @@ section{
     .nex{
         height: 60px;
     }
-    a{
-        margin: 20px;
-    }
+    
     li:hover{
         padding: 0.5rem 1rem;
         border-radius: 2px;
@@ -81,7 +79,6 @@ section{
         color: white;
         cursor: pointer;
     }
-
 }
 
 
