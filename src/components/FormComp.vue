@@ -1,5 +1,5 @@
 <template>
-    <section class="container">
+    <section class="container my-5">
         <div class="row align-items-center">
             <div class="col-8">
                 <h5>SEND A MESSAGE</h5>
@@ -7,27 +7,35 @@
                 <p>We will respond to your message as soon as possibile</p>
                 <div class="container">
                     <form class="row">
-                        <div class="col-6">
-                            <input type="text" v-model="InputName" placeholder="Name">
+                        <div class="col-6 py-4">
+                            <div class="form-group">                               
+                                <input type="text" class="form-control" v-model="InputName" placeholder="Name">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <input type="email" v-model="InputEmail" placeholder="Email">
+                        <div class="col-6 py-4">
+                            <div class="form-group">                               
+                                <input type="email" class="form-control" v-model="InputEmail" placeholder="Email">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <input type="number" v-model="inputPhone" placeholder="Phone">
+                        <div class="col-6 py-4">
+                            <div class="form-group">                               
+                                <input type="text" class="form-control" v-model="InputPhone" placeholder="Phone">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <select name="More info" id="">
-                                <option value="opt-1">option 1</option>
-                                <option value="opt-2">option 2</option>
-                                <option value="opt-3">option 3</option>
-                            </select>
+                        <div class="col-6 py-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>More Info</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>                         
                         </div>
 
-                        <div class="col">
-                            <input type="text-area" class="col-11 m-auto">
+                        <div class="form-group p-0">                           
+                            <textarea class="form-control" placeholder="Message" v-model="inputMessage" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                     </form>
+                    
 
                 </div>
             </div>
@@ -45,4 +53,12 @@
 
 <style lang="scss" scoped>
 @import '../style/style.scss';
+.col-6{
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.form-control, .form-select{
+    background-color: #E9ECEF;
+}
 </style>
