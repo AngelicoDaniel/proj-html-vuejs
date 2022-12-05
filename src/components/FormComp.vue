@@ -1,6 +1,6 @@
 <template>
     <section class="container my-5">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-8">
                 <h5>SEND A MESSAGE</h5>
                 <h3>Get in <span class="highlighted-green">Touch</span></h3>
@@ -35,11 +35,29 @@
                             <textarea class="form-control" placeholder="Message" v-model="inputMessage" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                     </form>
+
+                    <button class="btn btn-green">SEND</button>
                     
 
                 </div>
             </div>
-            <div class="col-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur consectetur totam illo voluptatum! Et eos ad dolore fugiat unde, quia veritatis molestias doloremque nam, aliquid eveniet aperiam sit quae ut.</div>
+            <div class="col-4">
+                <h4>Example Inc.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                
+                <ul>
+              <li>
+                <span class="green-circle"><i class="fa-solid fa-phone"></i></span> +1 (305) 1234-5678
+              </li>
+              <li>
+                <span class="green-circle"><i class="fa-solid fa-envelope"></i></span> hello@example.com
+              </li>
+              <li>
+                <span class="green-circle"><i class="fa-solid fa-location-dot"></i></span> Main Avenue, 987
+              </li>
+            </ul>
+            <button class="btn btn-bg-white">VIEW MAP</button>
+            </div>
         </div>
 
     </section>
@@ -58,7 +76,31 @@
     padding-right: 20px;
 }
 
+.btn{
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+
 .form-control, .form-select{
     background-color: #E9ECEF;
+}
+
+p{
+    padding: 2px 0;
+}
+
+ul{
+    color: #058283;
+    font-size: 1.4rem;
+    padding: 0;
+    li{
+        margin: 25px 0;
+    }
+    i{
+        clip-path: circle();
+        background-color: #d5e7e8;
+        padding: 15px;
+    }
 }
 </style>
