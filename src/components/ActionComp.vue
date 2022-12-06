@@ -1,7 +1,7 @@
 <template>
-    <section class="d-flex align-items-center text-center">
+    <section class="d-flex align-items-center text-center my-5">
         <div class="container my-5">
-            <h5 class="my-3">WE DO MORE FOR EVERYONE</h5>
+            <h5 class="m-3">WE DO MORE FOR EVERYONE</h5>
             <h3>Action & <span class="highlighted-green">Projects</span></h3>
             <nav>
                 <ul class="d-flex align-items-center justify-content-center">
@@ -14,6 +14,7 @@
                     <div v-for="(elem, index) in actionItems" :key="index" class="card container my-2">
                         <img :src="require(`../assets/img/project${elem.image}.jpg`)" alt="project">
                         <div class="title col-8">{{elem.title}}</div>
+                        <div class="sub-title col-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit</div>
                     </div>
                 </div>
             </div>
@@ -63,6 +64,9 @@
 
 <style lang="scss" scoped>
 @import "../style/style.scss";
+h5{
+    margin-left: 20px;
+}
 .nav-items{
     color: gray;
 }
@@ -91,6 +95,21 @@
             z-index: 10;
             
         }
+        .sub-title{
+            position: absolute;
+            bottom: 40%;
+            left: 10%;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            z-index: 10;
+            display: none;          
+        }    
     
 }
+.card:hover {
+            .sub-title{
+                display: block;
+            }           
+        }
 </style>
