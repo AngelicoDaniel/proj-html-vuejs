@@ -20,8 +20,8 @@
                     </ul>
                     <button class="btn-bg-none">GET IN TOUCH</button>
                 </div>
-                <div v-for="(elem, index) in footerArr" :key="index" class="col-3 m-3 p-4">
-                    <div class="footer-card">
+                <!-- <div v-for="(elem, index) in footerArr" :key="index" class="col-3 m-3 p-4"> -->
+                    <!-- <div class="footer-card">
                         <h4 class="text-white">{{elem.title}}</h4>
                         <ul>
                             <li>
@@ -44,20 +44,28 @@
                             </li>
                         </ul>
 
-                    </div>
+                    </div> -->
+                    <FooterCard 
+                    v-for="(elem, index) in footerArr" 
+                    :key="index" 
+                    class="col-3 m-3 p-4"
+                    :dettagliCard="elem"
+                    />
                 </div>
-            </div>
+            <!-- </div> -->
         </footer>                    
         <LastComp class="bottom-footer"/>
     </section>
 </template>
 
 <script>
+import FooterCard from './FooterCard.vue'
 import LastComp from './LastComp.vue'
 
     export default {
         name: 'FooterComp',
         components: {
+            FooterCard,
             LastComp
         },
         data() {
@@ -113,14 +121,7 @@ footer{
         padding-left: 0;
         margin: 20px 0;
     }
-    .fa-solid{
-        margin: 10px 0;
-    }
-    .footer-card{
-        background-color: #1d2023;
-        padding: 40px;
-        border-radius: 6%;
-    }   
+
 }
 
 .bottom-footer{
