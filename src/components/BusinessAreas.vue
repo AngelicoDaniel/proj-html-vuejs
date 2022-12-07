@@ -15,14 +15,7 @@
             <!--services-->
             <div class="services container-fluid">
                 <div class="row justify-content-between">
-                    <!-- <div v-for="(service, index) in services" :key="index" class="card my-4">
-                        <div class="d-flex justify-content-between align-items-center m-2">
-                            <i :class="service.icon"></i>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                        <h4>{{service.title}}</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, soluta doloremque repellendus sunt</p>
-                    </div> -->
+
                     <ServiceComp 
                     v-for="(service, index) in services"
                     :key="index"
